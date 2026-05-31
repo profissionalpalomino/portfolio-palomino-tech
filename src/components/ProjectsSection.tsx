@@ -8,7 +8,7 @@ const projects = [
     description:
       "Localizador automatizado de barbearias com extração inteligente de dados e integração direta ao WhatsApp. Uma ferramenta altamente otimizada para prospectar leads locais.",
     functions: ["Automação & Scraping", "Disparo de Mensagens", "Gestão de Leads"],
-    link: "https://barbearias.profissionalpalomino.cloud",
+    link: "https://barbearias.profissionalpalomino.cloud/?t=Tz4nJ8vL5cF1dY3",
     screenshots: ["/screenshot-barbearias-finder.png"],
     tag: "SaaS Tool",
     telemetry: "STATUS: ACTIVE • DEPLOY: ONLINE 200 OK",
@@ -50,6 +50,16 @@ const projects = [
     functions: ["Processamento de Dados", "Integração WhatsApp", "Google Sheets API"],
     link: "#",
     screenshots: ["/screenshot-automation-sheets.png"],
+    tag: "Automação n8n",
+    telemetry: "STATUS: ACTIVE • WEBHOOK: LISTENING",
+  },
+  {
+    title: "Gerador de Propostas Comerciais",
+    description:
+      "Sistema autônomo no n8n que coleta dados do cliente via WhatsApp, processa os requisitos, gera um PDF com a proposta comercial estruturada e envia de volta na conversa.",
+    functions: ["Geração de PDF", "Atendimento Dinâmico", "Automação de Vendas"],
+    link: "https://barbearias.profissionalpalomino.cloud/proposta/",
+    screenshots: ["/screenshot-automation-proposal.png"],
     tag: "Automação n8n",
     telemetry: "STATUS: ACTIVE • WEBHOOK: LISTENING",
   },
