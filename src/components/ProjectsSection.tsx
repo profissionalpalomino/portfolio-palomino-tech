@@ -33,6 +33,26 @@ const projects = [
     tag: "IA Multi-Agentes",
     telemetry: "STATUS: ACTIVE • AGENT: PLANNING",
   },
+  {
+    title: "Assistente de Agendamentos IA",
+    description:
+      "Automação inteligente via n8n que escuta mensagens em um grupo de WhatsApp, interpreta as informações usando inteligência artificial e cria o evento automaticamente no calendário.",
+    functions: ["Extração NLP", "Integração WhatsApp", "Google Calendar API"],
+    link: "#",
+    screenshots: ["/screenshot-automation-calendar.png"],
+    tag: "Automação n8n",
+    telemetry: "STATUS: ACTIVE • WEBHOOK: LISTENING",
+  },
+  {
+    title: "Tracker Financeiro via WhatsApp",
+    description:
+      "Fluxo de gestão financeira onde as despesas enviadas no WhatsApp são lidas por um webhook no n8n e categorizadas/registradas automaticamente em uma base de dados no Google Sheets.",
+    functions: ["Processamento de Dados", "Integração WhatsApp", "Google Sheets API"],
+    link: "#",
+    screenshots: ["/screenshot-automation-sheets.png"],
+    tag: "Automação n8n",
+    telemetry: "STATUS: ACTIVE • WEBHOOK: LISTENING",
+  },
 ];
 
 function Carousel({ images, title }: { images: string[]; title: string }) {
