@@ -1,3 +1,10 @@
+const sharp = require('sharp');
+const path = require('path');
+const fs = require('fs');
+
+const publicDir = path.join(__dirname, '../public');
+
+const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
   <defs>
     <radialGradient id="bg" cx="35%" cy="28%" r="85%">
@@ -32,3 +39,25 @@
   <path d="M216 196 L296 196 Q336 196 336 246 Q336 296 296 296 L256 296 L256 356 L216 356 Z" 
         fill="#ffffff" opacity="0.9" stroke="url(#roseStroke)" stroke-width="4"/>
 </svg>
+`;
+
+async function generate() {
+  const sizes = [
+    { name: 'icon-192.png', size: 192 },
+    { name: 'icon-512.png', size: 512 },
+    { name: 'apple-touch-icon.png', size: 180 },
+  ];
+
+  fs.writeFileSync(path.join(publicDir, 'favicon.svg'), svg.trim());
+  console.log('✅ Gerado: favicon.svg');
+
+  for (const { name, size } of sizes) {
+    await sharp(Buffer.from(svg))
+      .resize(size, size)
+      .png()
+      .toFile(path.join(publicDir, name));
+    console.log(`✅ Gerado: ${name} (${size}x${size})`);
+  }
+}
+
+generate().catch(console.error);
