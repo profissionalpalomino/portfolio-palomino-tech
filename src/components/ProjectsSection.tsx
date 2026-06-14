@@ -24,14 +24,14 @@ const projects = [
     telemetry: "STATUS: ACTIVE • DEPLOY: ONLINE 200 OK",
   },
   {
-    title: "Social Media Autopilot (IA)",
+    title: "Palomino Instagram (Motor Multiagente)",
     description:
-      "Sistema autônomo com agentes de inteligência artificial interligados que planejam, criam roteiros e publicam conteúdos no Instagram sem qualquer fricção.",
-    functions: ["Multi-Agentes de IA", "Criação de Conteúdo Autônoma", "Automação de Redes"],
-    link: "#",
+      "Sistema autônomo FastAPI com LangGraph que orquestra agentes de inteligência artificial para planejar e publicar posts. O motor gera as imagens em HTML Tailwind, renderiza painéis Dark Cyberpunk com Playwright e publica via API.",
+    functions: ["Orquestração LangGraph", "Render HTML -> Imagem", "Design Dark Cyberpunk"],
+    link: "https://palomino-instagram.profissionalpalomino.cloud/",
     screenshots: ["/screenshot-palomino-instagram.png"],
     tag: "IA Multi-Agentes",
-    telemetry: "STATUS: ACTIVE • AGENT: PLANNING",
+    telemetry: "STATUS: ACTIVE • AGENT: LANGGRAPH LOOP OK",
   },
   {
     title: "Assistente de Agendamentos IA",
@@ -44,14 +44,14 @@ const projects = [
     telemetry: "STATUS: ACTIVE • WEBHOOK: LISTENING",
   },
   {
-    title: "Tracker Financeiro via WhatsApp",
+    title: "Bill Reminder (Bot WhatsApp)",
     description:
-      "Fluxo de gestão financeira onde as despesas enviadas no WhatsApp são lidas por um webhook no n8n e categorizadas/registradas automaticamente em uma base de dados no Google Sheets.",
-    functions: ["Processamento de Dados", "Integração WhatsApp", "Google Sheets API"],
+      "Bot em Node.js focado em organização financeira que envia lembretes proativos de vencimento de contas fixas via WhatsApp utilizando a Evolution API.",
+    functions: ["Node.js Backend", "Evolution API", "Cron Jobs Diários"],
     link: "#",
     screenshots: ["/screenshot-automation-sheets.png"],
-    tag: "Automação n8n",
-    telemetry: "STATUS: ACTIVE • WEBHOOK: LISTENING",
+    tag: "Bot WhatsApp",
+    telemetry: "STATUS: ACTIVE • CRON: 08:00 AM",
   },
   {
     title: "Gerador de Propostas Comerciais",
