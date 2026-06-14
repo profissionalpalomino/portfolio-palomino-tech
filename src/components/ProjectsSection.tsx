@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AnimatedSection from "./AnimatedSection";
-import { CheckCircle2, ChevronLeft, ChevronRight, Activity } from "lucide-react";
+import { CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 
 const projects = [
   {
@@ -174,13 +174,7 @@ const ProjectsSection = () => {
                       </ul>
                     </div>
 
-                    {/* Telemetry Indicator */}
-                    <div className="pt-4 border-t border-border flex items-center gap-2">
-                      <Activity className="h-3.5 w-3.5 text-emerald-600 animate-pulse shrink-0" />
-                      <span className="font-mono text-[9px] text-emerald-600 font-semibold tracking-wider uppercase">
-                        {project.telemetry}
-                      </span>
-                    </div>
+
                   </div>
 
                 </div>
